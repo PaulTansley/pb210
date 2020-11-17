@@ -16,7 +16,7 @@ thickness of sub sample defaults to 1 change if necessary
 columns should be labeled as below: all dates should be in the format dd/mm/yyyy hh:mm:ss
 
 
-depth	  bulk_density  	dry_weight  	plate_date  	Po209 	Po210 	start_date  	end_date
+depth,	  bulk_density,  	dry_weight,  	plate_date,   	Po209, 	Po210, 	start_date,  	end_date
 
 
 install.packages(devtools)
