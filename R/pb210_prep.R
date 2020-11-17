@@ -1,4 +1,4 @@
-pb_prep <- function(name, spike, spike_error = 1, sampling_error = 1, thickness = 1){
+pb_prep <- function(name, spike = 91.11, spike_error = 1, sampling_error = 1, thickness = 1){
   require(dplyr)
   require(lubridate)
   myDir <- paste0("plum_runs/", name, "/")
