@@ -30,3 +30,4 @@ pb_prep <- function(name, spike, spike_error = 1, sampling_error = 1, thickness 
     relocate(labID, "depth(cm)", "density(g/cm^3)", "depth(cm)", "210Pb(Bq/kg)", "sd(pb210)", thickness)
   write.csv(data, myCSV, row.names = F)}
 
+usethis::use_github()
