@@ -20,4 +20,5 @@ depth,	  bulk_density,  	dry_weight,  	plate_date,   	Po209, 	Po210, 	start_date
 
 
 install.packages(devtools)
-devtoolS::install_github(PaulTansley/pb210)
+
+devtools::install_github(PaulTansley/pb210)
