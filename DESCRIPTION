@@ -1,0 +1,11 @@
+Package: pb210
+Type: Package
+Title: Preps data for Plum()
+Version: 0.1.0
+Author: Paul Tansley 
+Maintainer: Paul Tansley <pt360@exeter.ac.uk>
+Description: Creates pb210 csv for plum()
+Depends: R (>= 4.0), tidyverse, lubridate
+License: GPL >=2.0 
+Encoding: UTF-8
+LazyData: true
