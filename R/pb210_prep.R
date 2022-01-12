@@ -8,9 +8,9 @@ pb_prep <- function(name, spike = 91.11, spike_error = 1, sampling_error = 1, th
   data$thickness <- thickness
 
   data <- data %>%
-    mutate(plate_date = dmy_hms(plate_date),
-           start_date = dmy_hms(start_date),
-           end_date = dmy_hms(end_date),
+    mutate(plate_date = dmy_hms(Plate_date),
+           start_date = dmy_hms(Start_date),
+           end_date = dmy_hms(End_date),
            int = plate_date %--% end_date,
            dur = as.duration(int)/dyears(1),
            po209 = Po209/(exp(-(log(2)/125 * dur))),
