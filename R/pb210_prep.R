@@ -3,12 +3,8 @@ pb_prep <- function(name, spike = 91.11, spike_error = 1, sampling_error = 1, th
   require(lubridate)
   myDir <- paste0("plum_runs/", name, "/")
   myCSV <- paste0(myDir, name, ".csv")
-  CSV <- paste0(name, ".csv")
   if(!dir.exists(myDir)) dir.create(myDir)
-  data <- read.csv(CSV)
-  spike <- spike
-  spike_error <- spike_error
-  sampling_error <- sampling_error
+  data <- read.csv(name)
   data$thickness <- thickness
 
   data <- data %>%
