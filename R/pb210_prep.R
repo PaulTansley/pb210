@@ -1,7 +1,7 @@
 pb_prep <- function(name, spike = 91.11, spike_error = 1, sampling_error = 1, thickness = 1){
   require(dplyr)
   require(lubridate)
-  myDir <- paste0("plum_runs/", name, "/")
+  myDir <- paste0("plum_runs/",gsub(".csv", "", name), "/")
   myCSV <- paste0(myDir, name, ".csv")
   if(!dir.exists(myDir)) dir.create(myDir)
   data <- read.csv(name)
